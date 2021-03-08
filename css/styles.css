@@ -273,11 +273,6 @@ img {
   margin-bottom: 30px;
 }
 
-.icon {
-  width: 70px;
-  height: 70px;
-}
-
 /* +++++++ FEATURES END +++++++ */
 
 /* +++++++ TEAM PRODUCTION +++++++ */
@@ -369,8 +364,6 @@ img {
 
 .icon-app .icon-messenger {
   fill: currentColor;
-  width: 20px;
-  height: 20px;
 }
 
 /* +++++++ TEAM END +++++++ */
@@ -452,8 +445,8 @@ img {
   margin-top: 30px;
 }
 
-.cards-list:hover,
-.cards-list:focus {
+.cards-list-item:hover,
+.cards-list-item:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
