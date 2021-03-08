@@ -479,6 +479,10 @@ img {
   border-right: 1px solid #eeeeee;
 }
 
+abbr[title='label tag'] {
+  text-decoration: none;
+}
+
 /* +++++++ SERVICES END +++++++ */
 
 /* +++++++ FOOTER +++++++ */
