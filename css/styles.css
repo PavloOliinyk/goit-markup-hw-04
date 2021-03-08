@@ -162,16 +162,15 @@ img {
   line-height: 1.14;
 }
 
-.icon-envelope::before {
-  width: 16px;
-  height: 12px;
+.header-icon {
   margin-right: 10px;
-  content: '';
-  background-color: #000000;
-  /* background-image: url(../images/symbol-defs.svg); */
-  background-size: contain;
+  fill: currentColor;
 }
 
+.header-link:hover .header-icon,
+.header-link:focus .header-icon {
+  color: var(--activeLinkColor);
+}
 /* +++++++ HEADER END +++++++ */
 
 /* +++++++ HERO +++++++ */
@@ -254,7 +253,6 @@ img {
 
 .features-list {
   display: flex;
-  flex-wrap: wrap;
   margin-left: -30px;
   margin-top: -30px;
 }
@@ -265,33 +263,19 @@ img {
   margin-top: 30px;
 }
 
-.features-item::before {
-  content: '';
-  display: block;
+.features-item-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 120px;
   background-color: #f5f4fa;
-  outline: 2px solid red;
   border-radius: 4px;
   margin-bottom: 30px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
-.icon-antenna::before {
-  background-image: url(../images/icons-svg/antenna.svg);
-}
-
-.icon-clock::before {
-  background-image: url(../images/icons-svg/clock.svg);
-}
-
-.icon-diagram::before {
-  background-image: url(../images/icons-svg/diagram.svg);
-}
-
-.icon-astronaut::before {
-  background-image: url(../images/icons-svg/astronaut.svg);
+.icon {
+  width: 70px;
+  height: 70px;
 }
 
 /* +++++++ FEATURES END +++++++ */
@@ -325,7 +309,6 @@ img {
 
 .team-list {
   display: flex;
-  flex-wrap: wrap;
   margin-left: -30px;
 }
 
@@ -362,36 +345,32 @@ img {
 
 .team-list-icon {
   display: flex;
-  /* justify-content: space-between; */
-  /* outline: 2px solid red; */
 }
 
 .icon-app:not(:last-child) {
   margin-right: 10px;
 }
 
-.icon-app-logo {
+.icon-app-messenger {
   display: inline-flex;
   width: 44px;
   height: 44px;
   border-radius: 50%;
   color: #afb1b8;
-  /* outline: 2px solid green; */
   justify-content: center;
   align-items: center;
 }
 
-.team-list-heading .icon-app-logo:hover,
-.team-list-heading .icon-app-logo:focus {
+.team-list-heading .icon-app-messenger:hover,
+.team-list-heading .icon-app-messenger:focus {
   background-color: var(--activeLinkColor);
   color: var(--whiteTextColor);
 }
 
-.icon-app .logo-icon {
+.icon-app .icon-messenger {
   fill: currentColor;
   width: 20px;
   height: 20px;
-  /* outline: 2px solid blue; */
 }
 
 /* +++++++ TEAM END +++++++ */
@@ -400,27 +379,37 @@ img {
 
 .clients-list {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  margin-left: -30px;
 }
 
-.clients-item-logo {
+.clients-list-item {
+  display: flex;
+  margin-left: 30px;
+  flex-basis: calc(100% / 6 - 30px);
+  align-items: center;
+  justify-content: center;
+}
+
+.clients-list-link {
   display: inline-flex;
-  width: 170px;
+  width: 100%;
   height: 90px;
-  border: 1px solid #afb1b8;
+  align-items: center;
+  justify-content: center;
   color: #afb1b8;
+  border: 1px solid #afb1b8;
   border-radius: 4px;
 }
 
-.clients-item-logo .logo-icon {
-  fill: currentColor;
-}
-
-.clients-item-logo:hover,
-.clients-item-logo:focus {
+.clients-list-link:hover,
+.clients-list-link:focus {
   border-color: var(--activeLinkColor);
   color: var(--activeLinkColor);
+}
+
+.icon-client {
+  fill: currentColor;
 }
 
 /* +++++++ CLIENTS END +++++++ */
@@ -550,13 +539,13 @@ img {
   color: var(--whiteTextColor);
 }
 
-.footer-join-links .icon-app-logo {
+.footer-join-links .icon-app-messenger {
   background-color: rgba(255, 255, 255, 0.1);
   color: #ffffff;
 }
 
-.footer-join-links .icon-app-logo:hover,
-.footer-join-links .icon-app-logo:focus {
+.footer-join-links .icon-app-messenger:hover,
+.footer-join-links .icon-app-messenger:focus {
   background-color: var(--activeLinkColor);
 }
 /* +++++++ FOOTER END +++++++ */

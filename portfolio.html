@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Вебстудия</title>
-    <!--FONTS!!!-->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
@@ -38,30 +37,32 @@
             <li class="header-item">
               <a class="header-link link" href="">Контакты</a>
             </li>
-            <li class="header-item">
-              <a class="header-link link" href="./test.html"
-                >Тестовая странцица</a
-              >
-            </li>
           </ul>
         </nav>
         <ul class="header-auth list">
           <li class="header-item">
-            <a class="header-link link" href="mailto:info@example.com"
-              >info@example.com</a
+            <a class="header-link link" href="mailto:info@example.com">
+              <svg class="header-icon" width="16" height="12">
+                <use href="./images/sprite.svg#envelope"></use>
+              </svg>
+              info@example.com</a
             >
           </li>
           <li class="header-item">
-            <a class="header-link link" href="tel:+380961111111"
-              >+38 096 111 11 11</a
-            >
+            <a class="header-link link" href="tel:+380961111111">
+              <svg class="header-icon" width="10" height="16">
+                <use href="./images/sprite.svg#smartphone"></use>
+              </svg>
+              +38 096 111 11 11
+            </a>
           </li>
         </ul>
       </div>
     </header>
 
     <main>
-      <!-- <h1 class="suptitle">Портфолио</h1> -->
+      <h1 class="suptitle visually-hidden">Портфолио</h1>
+
       <!--SERVICES-->
 
       <section class="services section">
@@ -247,32 +248,67 @@
 
     <footer class="footer">
       <div class="container">
-        <a class="logo bottom link" href="./index.html" lang="en">
-          <span class="logo-part">Web</span>Studio
-        </a>
-        <address class="address">
-          <ul class="address-list list">
-            <li class="address-list-item">
-              <a
-                class="address-list-link-gmaps link"
-                href="https://goo.gl/maps/zEipnjbdjEoZz8kJ8"
-                target="_blank"
-                rel="noopener noreferrer"
-                >г. Киев, пр-т Леси Украинки, 26</a
-              >
+        <div class="footer-address">
+          <a class="logo bottom link" href="./index.html" lang="en">
+            <span class="logo-part">Web</span>Studio
+          </a>
+          <address class="address">
+            <ul class="address-list list">
+              <li class="address-list-item">
+                <a
+                  class="address-list-link-gmaps link"
+                  href="https://goo.gl/maps/zEipnjbdjEoZz8kJ8"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >г. Киев, пр-т Леси Украинки, 26</a
+                >
+              </li>
+              <li class="address-list-item">
+                <a class="address-list-link link" href="mailto:info@example.com"
+                  >info@example.com</a
+                >
+              </li>
+              <li class="address-list-item">
+                <a class="address-list-link link" href="tel:+380961111111"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="footer-join-links">
+          <h3 class="footer-links-title subtitle">Присоединяйтесь</h3>
+          <ul class="team-list-icon list">
+            <li class="icon-app">
+              <a class="icon-app-messenger link" href="">
+                <svg class="icon-messenger">
+                  <use href="./images/sprite.svg#instagram"></use>
+                </svg>
+              </a>
             </li>
-            <li class="address-list-item">
-              <a class="address-list-link link" href="mailto:info@example.com"
-                >info@example.com</a
-              >
+            <li class="icon-app">
+              <a class="icon-app-messenger link" href="">
+                <svg class="icon-messenger">
+                  <use href="./images/sprite.svg#twitter"></use>
+                </svg>
+              </a>
             </li>
-            <li class="address-list-item">
-              <a class="address-list-link link" href="tel:+380961111111"
-                >+38 096 111 11 11</a
-              >
+            <li class="icon-app">
+              <a class="icon-app-messenger link" href="">
+                <svg class="icon-messenger">
+                  <use href="./images/sprite.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="icon-app">
+              <a class="icon-app-messenger link" href="">
+                <svg class="icon-messenger">
+                  <use href="./images/sprite.svg#linkedin"></use>
+                </svg>
+              </a>
             </li>
           </ul>
-        </address>
+        </div>
       </div>
     </footer>
   </body>
